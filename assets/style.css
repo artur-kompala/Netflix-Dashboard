@@ -1,0 +1,91 @@
+/* --- OGÓLNE TŁO I FONTY --- */
+body {
+    background-color: #222 !important;
+    font-family: sans-serif;
+}
+
+/* --- 1. STYLIZACJA LIST ROZWIJANYCH (dbc.Select) --- */
+/* Nadpisujemy klasę Bootstrapa .form-select */
+.form-select, .form-control {
+    background-color: #303030 !important; /* Ciemne tło */
+    color: white !important;               /* Biały tekst */
+    border: 1px solid #444 !important;     /* Ciemna ramka */
+}
+
+/* Po kliknięciu (focus) - czerwona poświata Netflix */
+.form-select:focus, .form-control:focus {
+    border-color: #E50914 !important;
+    box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.25) !important;
+}
+
+/* --- 2. STYLIZACJA PRZYCISKÓW INFO "?" (dbc.Button) --- */
+/* W layout.py daliśmy im klasę .info-btn */
+.info-btn {
+    color: #bbb !important;           /* Szary kolor ikony/tekstu */
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none !important; /* Usuwa podkreślenie linku */
+}
+
+.info-btn:hover {
+    color: #E50914 !important; /* Czerwony po najechaniu */
+}
+
+/* --- 3. STYLIZACJA PRZEŁĄCZNIKÓW (Radio Items) --- */
+/* Kropka niezaznaczona */
+.form-check-input {
+    background-color: #303030 !important;
+    border-color: #555 !important;
+}
+
+/* Kropka zaznaczona */
+.form-check-input:checked {
+    background-color: #E50914 !important;
+    border-color: #E50914 !important;
+}
+
+
+
+/* --- 4. NAGŁÓWEK I TYTUŁ --- */
+.app-title {
+    color: #E50914; /* Netflix Red */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.author-info {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* --- 5. MODALE (Okienka Info) --- */
+.modal-content {
+    background-color: #2b2b2b !important; /* Ciemne tło modala */
+    color: white !important;
+    border: 1px solid #444;
+}
+
+.modal-header, .modal-footer {
+    border-color: #444 !important;
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Biały krzyżyk zamykania */
+}
+
+/* --- 6. KARTY (Kontenery wykresów) --- */
+.card {
+    background-color: #1f1f1f !important; /* Bardzo ciemne tło karty */
+    border: 1px solid #333 !important;
+}
+
+.card-header {
+    background-color: #252525 !important;
+    border-bottom: 1px solid #333 !important;
+    font-weight: bold;
+    color: #ddd;
+}
